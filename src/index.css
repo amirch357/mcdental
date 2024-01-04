@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+@font-face{
+  font-family: "kirvy";
+  src: local("kirvy"),url("../src/fonts/Kirvy-Light.otf") format("opentype");
+}
+@font-face{
+  font-family: "kirvy-medium";
+  src: local("kirvy"),url("../src/fonts/Kirvy-Bold.otf") format("opentype");
+}
+@font-face{
+  font-family: "poppins";
+  src: local("poppins"),url("../src/fonts/Poppins-Light.ttf") format("truetype");
+}
+@font-face{
+  font-family: "poppins-medium";
+  src: local("poppins"),url("../src/fonts/Poppins-Medium.ttf") format("truetype");
+}

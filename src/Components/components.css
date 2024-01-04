@@ -1,0 +1,44 @@
+.spec-compo-title{
+    font-size: 28px !important;
+    color: #255a6f;
+    font-family: kirvy-medium !important;
+    padding-top: 2%;
+}
+.spec-compo-desc{
+    font-size: 16px !important;
+    color: #8b8b8a;
+    font-family: kirvy-medium !important;
+    padding-top: 2%;
+    letter-spacing: .45px !important;
+    line-height: 28px !important;
+
+}
+.specialties-img{
+    max-width: 100%;
+}
+.peridontal-therapy-title{
+    color: #255a6f !important;
+    font-size: 28px !important;
+    font-family: kirvy-medium !important;
+    text-align: center !important;
+}
+.peridontal-therapy-desc{
+    color: #777777 !important;
+    font-size: 16px !important;
+    letter-spacing: 0.45px !important;
+    font-family: kirvy-medium !important;
+    padding-top: 2%;
+}
+.direct-restoration-title{
+    color: #255a6f !important;
+    font-size: 28px !important;
+    font-family: kirvy-medium !important;
+    text-align: center !important;
+}
+.direct-restoration-desc{
+    color: #777777 !important;
+    font-size: 16px !important;
+    letter-spacing: 0.45px !important;
+    font-family: kirvy-medium !important;
+    padding-top: 2%;
+}
