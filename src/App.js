@@ -25,15 +25,15 @@ function App() {
    <>
    
    <Routes>
-   <Route path='/mc2dental_new' element={<Home />} />
-   <Route path="mc2dental_new/services" element={<Services />} />
-   <Route path="/mc2dental_new/patient-information" element={<PatientInfo />} />
-   <Route path="/mc2dental_new/gallery" element={<Gallery />} />
-   <Route path="/mc2dental_new/faq" element={<FAQ />} />
-   <Route path="/mc2dental_new/blogs" element={<Blog  />}  />
+   <Route path='/' element={<Home />} />
+   <Route path="/services" element={<Services />} />
+   <Route path="/patient-information" element={<PatientInfo />} />
+   <Route path="/gallery" element={<Gallery />} />
+   <Route path="/faq" element={<FAQ />} />
+   <Route path="/blogs" element={<Blog  />}  />
    
-   <Route path={`/mc2dental_new/blog`} element={<PostDetail />} />
-   <Route path={`/mc2dental_new/search`} element={<Search />} />
+   <Route path={`/blog`} element={<PostDetail />} />
+   <Route path={`/search`} element={<Search />} />
   
    </Routes>
    <Footer />

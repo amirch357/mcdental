@@ -24,7 +24,7 @@ function Footer() {
             </Grid>
             <Grid container sx={{pt:5,pb:5}}>
             <Grid item lg={4} md={4} sm={4} xs={12} sx={{display:{lg:"block",md:"block",sm:"block",xs:"flex"},justifyContent:"center"}} >
-                <Link underline='none' href="/mc2dental_new">
+                <Link underline='none' href="/">
                 <img src={require("../../assets/Mc dental/logo-white.png")} />
                 </Link>
             </Grid>

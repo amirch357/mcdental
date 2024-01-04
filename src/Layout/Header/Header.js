@@ -15,7 +15,7 @@ import { useNavigate,useLocation } from 'react-router-dom';
 import { Dropdown } from 'react-bootstrap';
 
 import "../layout.css"
-const pages = [{title:'Our Team',id:"mc2dental_new/#ourTeam"}, {title:'Services',id:"mc2dental_new/services"}, {title:'Patient info',id:"mc2dental_new/patient-information"},{title:'Gallery',id:"mc2dental_new/gallery"},{title:'FAQ',id:"mc2dental_new/faq"},{title:'Blog',id:"mc2dental_new/blogs"}];
+const pages = [{title:'Our Team',id:"#ourTeam"}, {title:'Services',id:"services"}, {title:'Patient info',id:"patient-information"},{title:'Gallery',id:"gallery"},{title:'FAQ',id:"faq"},{title:'Blog',id:"blogs"}];
 
 
 function Header() {
@@ -59,7 +59,7 @@ function Header() {
       <Container maxWidth="xl">
         <Toolbar className='tool-bar' disableGutters    >
          <Box sx={{padding:3}} >
-          <Link onClick={()=>navigate("/mc2dental_new")} className="logo-link">
+          <Link onClick={()=>navigate("/")} className="logo-link">
           <img src={require("../../assets/gallery/mc2dental_transparent_final.png")} className="logo" />
           </Link>
           </Box>

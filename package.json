@@ -1,7 +1,6 @@
 {
   "name": "mcdental",
   "version": "0.1.0",
-  "homepage": "https://explorelogicsit.com/mc2dental_new/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.6",

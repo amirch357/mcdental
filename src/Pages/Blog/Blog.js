@@ -28,7 +28,7 @@ function Blog() {
 
         const handleNavigate=(id,title,image,date,detail)=>{
             const url = slugify(title,{lower:true})
-            navigate(`/mc2dental_new/blog/?${url}`,{state:{id:id,image:image,title:title,date:date,detail:detail}})
+            navigate(`/blog/?${url}`,{state:{id:id,image:image,title:title,date:date,detail:detail}})
           
             
         }
@@ -88,7 +88,7 @@ const GetDate=(fullDate)=>{
         <Grid item lg={4} md={4} xs={12} >
            <Box sx={{mb:10}}>
             <Typography className='search-label' >Search</Typography>
-            <OutlinedInput value={search} onChange={(e)=>setSearch(e.target.value)} className='search-input' endAdornment={<Button className='search-btn' onClick={()=>navigate("/mc2dental_new/search",{state:{search:search}})} variant="contained">Search</Button>}  />
+            <OutlinedInput value={search} onChange={(e)=>setSearch(e.target.value)} className='search-input' endAdornment={<Button className='search-btn' onClick={()=>navigate("/search",{state:{search:search}})} variant="contained">Search</Button>}  />
             </Box>  
             <Box>
             <Typography className='recent-post-title'>RECENT POSTS</Typography> 
@@ -121,7 +121,7 @@ const GetDate=(fullDate)=>{
                     <Box>
                         {filterDuplicates(POSTS).map((item)=>(
                             <>
-                            <Typography className='archive-date' onClick={()=>navigate("/mc2dental_new/search",{state:{search:item.date,cat:"date"}})}  > {GetDate(item.date)}</Typography>
+                            <Typography className='archive-date' onClick={()=>navigate("/search",{state:{search:item.date,cat:"date"}})}  > {GetDate(item.date)}</Typography>
                             <Divider className='archive-divider' />
                             </>
                         ))}
@@ -133,7 +133,7 @@ const GetDate=(fullDate)=>{
                     <Box>
                             {TAGS.map((item)=>(
                                    
-                                    <Chip onClick={()=>navigate("/mc2dental_new/search",{state:{search:item.postIds,cat:"tags",label:item.title}})} label={`${item.title} (${item.postIds.length})`} sx={{mr:1,mt:2}} className="chip" />
+                                    <Chip onClick={()=>navigate("/search",{state:{search:item.postIds,cat:"tags",label:item.title}})} label={`${item.title} (${item.postIds.length})`} sx={{mr:1,mt:2}} className="chip" />
                                    
                             
                                 

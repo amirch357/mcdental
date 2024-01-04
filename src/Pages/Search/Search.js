@@ -49,7 +49,7 @@ function Search() {
     }
     const handleNavigate=(id,title,image,date,detail)=>{
         const url = slugify(title,{lower:true})
-        navigate(`/mc2dental_new/blog/?${url}`,{state:{id:id,image:image,title:title,date:date,detail:detail}})
+        navigate(`/blog/?${url}`,{state:{id:id,image:image,title:title,date:date,detail:detail}})
       
         
     }
@@ -75,7 +75,7 @@ function Search() {
             <Grid item lg={8} md={8} >
             {result.length===0?<Box sx={{display:"flex",flexDirection:"column",alignItems:"center"}}>
             <Typography className='not-found-title' sx={{mt:3}} >Nothing Found</Typography>
-            <OutlinedInput  onChange={(e)=>setSearchInput(e.target.value)}  sx={{mt:2}} className='no-result-search-input' endAdornment={<Button onClick={()=>navigate("/mc2dental_new/search",{state:{search:searchInput}})} className='search-btn' variant="contained">Search</Button>}  />
+            <OutlinedInput  onChange={(e)=>setSearchInput(e.target.value)}  sx={{mt:2}} className='no-result-search-input' endAdornment={<Button onClick={()=>navigate("/search",{state:{search:searchInput}})} className='search-btn' variant="contained">Search</Button>}  />
             <Typography sx={{mt:2}} className='not-found-desc' >Try to search using another term via the form above</Typography>
         </Box>
         
@@ -111,7 +111,7 @@ function Search() {
                 <Grid item lg={4} md={4} >
            <Box sx={{mb:10}}>
             <Typography className='search-label' >Search</Typography>
-            <OutlinedInput defaultValue={ state.cat==="date"||state.cat==="tags"?"": state.search} onChange={(e)=>setSearchInput(e.target.value)}  className='search-input' endAdornment={<Button className='search-btn' onClick={()=>navigate("/mc2dental_new/search",{state:{search:searchInput}})} variant="contained">Search</Button>}  />
+            <OutlinedInput defaultValue={ state.cat==="date"||state.cat==="tags"?"": state.search} onChange={(e)=>setSearchInput(e.target.value)}  className='search-input' endAdornment={<Button className='search-btn' onClick={()=>navigate("/search",{state:{search:searchInput}})} variant="contained">Search</Button>}  />
             </Box>  
             <Box>
             <Typography className='recent-post-title'>RECENT POSTS</Typography> 
@@ -144,7 +144,7 @@ function Search() {
                     <Box>
                         {filterDuplicates(POSTS).map((item)=>(
                             <>
-                            <Typography className='archive-date' onClick={()=>navigate("/mc2dental_new/search",{state:{search:item.date,cat:"date"}})} >{GetDate(item.date)}</Typography>
+                            <Typography className='archive-date' onClick={()=>navigate("/search",{state:{search:item.date,cat:"date"}})} >{GetDate(item.date)}</Typography>
                             <Divider className='archive-divider' />
                             </>
                         ))}
@@ -156,7 +156,7 @@ function Search() {
                     <Box>
                             {TAGS.map((item)=>(
                                    
-                                    <Chip onClick={()=>navigate("/mc2dental_new/search",{state:{search:item.postIds,cat:"tags",label:item.title}})} label={`${item.title} (${item.postIds.length})`} sx={{mr:1,mt:2}} className="chip" />
+                                    <Chip onClick={()=>navigate("/search",{state:{search:item.postIds,cat:"tags",label:item.title}})} label={`${item.title} (${item.postIds.length})`} sx={{mr:1,mt:2}} className="chip" />
                                    
                             
                                 
